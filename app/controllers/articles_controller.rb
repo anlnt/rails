@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.save
 
-    render json: @article, status: :ok
+    render json: @article, status: :created
   end
 
   private
